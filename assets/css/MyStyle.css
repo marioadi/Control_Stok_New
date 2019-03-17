@@ -1,0 +1,9 @@
+.centralizar-divs{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.espaco-topo{
+	margin-top: 15px;
+}
