@@ -63,7 +63,7 @@
                                 </div>
                             </div>    
                         </div>
-                        <div class=" centralizar-divs">
+                        <div class="centralizar-divs">
                             <div class="row espaco-topo">
                                 <div  class="form-group  centralizar-divs">
                                     <div class="col-xs-12 col-sm-12">

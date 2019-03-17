@@ -1,19 +1,32 @@
-<?php include('conexao.php'); ?>
-<!DOCTYPE html>
-<html lang="pt_BR">
-<head>
-	<title>Carrinho</title>
-	<meta charset="utf-8">
+<?php include 'header.php' ?>
 
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/MyStyle.css" type="text/css">
-	<link rel="stylesheet" href="assets/scss/style.css">
-</head>
-<body>	
-		<br/><br/>
-        <div class="container">
+<!-- Inicio do conteudo -->
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Painel de Controle</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li class="active">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- INIT CODE -->
+
+        <div class="content mt-3">
             <div class="row">
                 <div class="col-md-12">
+                    <!-- INICIO CONTEUDO -->
+
                 <?php
 
 	            if(isset($_POST['id_txt'])) {
@@ -25,8 +38,6 @@
 	            	$mycarrinho[] = array('id' => $id, 'nome' => $nome, 'preco' => $preco, 'quantidade' => $quantidade);
 		        }
 
-		        //Init Session
-		        session_start();
 		        if(isset($_SESSION['carrinho'])){
 		            $mycarrinho = $_SESSION['carrinho'];
 		            if(isset($_POST['id_txt'])){
@@ -99,9 +110,14 @@
                         </tr>
                     </table>
                     <a href="index.php" class="btn btn-primary"> Voltar </a>
+<!-- FIM CONTEUDO -->
                 </div>
             </div>
         </div>
 
-</body>
-</html>
+        <!-- THE END CODE -->
+
+    </div><!-- /#right-panel -->
+    <!-- Right Panel -->
+
+<?php include 'footer.php' ?>
