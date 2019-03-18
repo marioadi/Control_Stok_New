@@ -75,58 +75,67 @@
 	                <div class="col-md-12">
 	                    <!-- INICIO CONTEUDO -->
 	                    	
-	                    	<div class="row espaco-topo">
-	                    		<div class="col-xs-12 col-sm-12">
-	                    			
-	                    			<div class="form-group">
-	                    				<div class="col-xs-12 col-sm-1">
-	                    					<img class="img-circle" src="<?php echo $imagem; ?>" width="100" heiht="100"/>
-	                    				</div>
 
-	                    				<div class="col-xs-12 col-sm-6">
-	                    					<label class="control-label"> Escolher Imagem </label>
-	                    					<input class="form-control" type="file" name="imagem-edit">
-	                    				</div>
-
-	                    				<div class="col-xs-12 col-sm-5">
-	                    					<label class="control-label"> Nome </label>
-	                    					<input class="form-control" type="text" name="nome-edit" value="<?php echo $nome; ?>">
-	                    				</div>
+	                    	<div class="container">
+	                    		<div class="card">
+	                    			<div class="card-header">
+	                    				Dados do Produto
 	                    			</div>
-	                    		</div>
-	                    	</div>
+	                    			<div class="card-body">
+	                    				<div class="row espaco-topo">
+				                    		<div class="col-xs-12 col-sm-12">
+				                    			
+				                    			<div class="form-group">
+				                    				<div class="col-xs-12 col-sm-1">
+				                    					<img class="img-circle" src="<?php echo $imagem; ?>" width="100" heiht="100"/>
+				                    				</div>
 
-	                    	<div class="row espaco-topo">
-	                    		<div class="col-xs-12 col-sm-12">
-	                    			<div class="form-group">
-	                    				<div class="col-xs-12 col-sm-4">
-	                    					<label class="control-label"> Descrição </label>
-	                    					<input class="form-control" type="text" name="descricao-edit" value="<?php echo $descricao; ?>">
-	                    				</div>
+				                    				<div class="col-xs-12 col-sm-6">
+				                    					<label class="control-label"> Escolher Imagem </label>
+				                    					<input class="form-control" type="file" name="imagem-edit">
+				                    				</div>
 
-	                    				<div class="col-xs-12 col-sm-4">
-	                    					<label class="control-label"> preco </label>
-	                    					<input class="form-control" type="text" name="preco-edit" value="<?php echo $preco; ?>">
-	                    				</div>
+				                    				<div class="col-xs-12 col-sm-5">
+				                    					<label class="control-label"> Nome </label>
+				                    					<input class="form-control" type="text" name="nome-edit" value="<?php echo $nome; ?>">
+				                    				</div>
+				                    			</div>
+				                    		</div>
+				                    	</div>
 
-	                    				<div class="col-xs-12 col-sm-2">
-	                    					<label class="control-label"> Quantidade </label>
-	                    					<input class="form-control" type="text" name="quantidade-edit" value="<?php echo $quantidade; ?>">
-	                    				</div>
-	                    			
-	                    				<div class="col-xs-12 col-sm-2">
-	                    					<label class="control-label"> Data </label>
-	                    					<input class="form-control" type="text" name="data-edit" value="<?php echo $data; ?>">
-	                    				</div>
-	                    			</div>	
-	                    		</div>
-	                    	</div>
+				                    	<div class="row espaco-topo">
+				                    		<div class="col-xs-12 col-sm-12">
+				                    			<div class="form-group">
+				                    				<div class="col-xs-12 col-sm-4">
+				                    					<label class="control-label"> Descrição </label>
+				                    					<input class="form-control" type="text" name="descricao-edit" value="<?php echo $descricao; ?>">
+				                    				</div>
 
+				                    				<div class="col-xs-12 col-sm-4">
+				                    					<label class="control-label"> preco </label>
+				                    					<input class="form-control" type="text" name="preco-edit" value="<?php echo $preco; ?>">
+				                    				</div>
 
-	                    	<div class="row">
-	                    		<div class="centralizar-divs espaco-topo">
-	                    			<input type="submit" value="Atualizar" class="btn btn-primary">
-	                    			<a href="index.php" class="btn btn-primary"> Voltar </a>
+				                    				<div class="col-xs-12 col-sm-2">
+				                    					<label class="control-label"> Quantidade </label>
+				                    					<input class="form-control" type="text" name="quantidade-edit" value="<?php echo $quantidade; ?>">
+				                    				</div>
+				                    			
+				                    				<div class="col-xs-12 col-sm-2">
+				                    					<label class="control-label"> Data </label>
+				                    					<input class="form-control" type="text" name="data-edit" value="<?php echo $data; ?>">
+				                    				</div>
+				                    			</div>	
+				                    		</div>
+				                    	</div>
+
+				                    	<div class="row">
+				                    		<div class="centralizar-divs espaco-topo">
+				                    			<a href="index.php" class="btn btn-primary"><span class="fa fa-angle-double-left"></span> Voltar </a>
+				                    			<input type="submit" value="Atualizar" class="btn btn-primary">
+				                    		</div>
+				                    	</div>
+	                    			</div>
 	                    		</div>
 	                    	</div>
 	                    <!-- FIM CONTEUDO -->
