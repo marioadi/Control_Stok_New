@@ -7,3 +7,13 @@
 .espaco-topo{
 	margin-top: 15px;
 }
+
+#border-radius-right{
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
+}
+
+#border-radius-left{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}

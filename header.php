@@ -1,27 +1,15 @@
-<?php 
-require 'conexao.php'; 
-session_start();
+<?php session_start();
+include 'usuario.class.php'; 
 
-if (isset($_SESSION['login']) && !empty($_SESSION['login']) ) {
-    $id = addslashes($_SESSION['login']);
-
-    $sql = $pdo->query("SELECT * FROM login WHERE id = ".$id);
-    if ($sql->rowCount() > 0) {
-        $ln = $sql->fetch();
-        $nome = $ln['usuario'];
-    }
-}else{
-    header("Location: login.php");
-    exit;
-}
-
+$usuario = new Usuario();
+$nome = $usuario->loginAuth($_SESSION['login']);
 ?>
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Adi Manager</title>
+    <title>Control Stok</title>
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -53,8 +41,8 @@ if (isset($_SESSION['login']) && !empty($_SESSION['login']) ) {
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                <a class="navbar-brand" href="index.php"><p class="text-info text-uppercase">Control Stok</p></a>
+                <a class="navbar-brand hidden" href="./"><p class="text-info text-uppercase">CS</p></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
