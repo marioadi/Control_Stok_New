@@ -1,5 +1,17 @@
-<?php include 'header.php' ?>
+<?php   include 'header.php'; 
+        include 'produto.class.php';
 
+$produto = new Produto();
+
+if(isset($_POST['nome-cad']) && !empty($_POST['nome-cad']) || isset($_POST['valor-cad']) && !empty($_POST['valor-cad']) || isset($_POST['quantidade-cad']) && !empty($_POST['quantidade-cad'])){
+
+    $produto->cadastrar($_POST['imagem-cad'], $_POST['nome-cad'], $_POST['descricao-cad'], $_POST['preco-cad'], $_POST['quantidade-cad'], $_POST['data-cad']);
+    
+}
+
+
+
+?>
 <!-- Inicio do conteudo -->
         <div class="breadcrumbs">
             <div class="col-sm-4">
@@ -26,7 +38,7 @@
         <div class="content mt-3">
             <div class="row">
                 <div class="col-md-12">
-                    <form method="POST" action="receberProduto.php">
+                    <form method="POST">
 
                          <div class="container">
                             <div class="accordion">

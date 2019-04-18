@@ -4,6 +4,13 @@
   margin-right: auto;
 }
 
+.centralizar-divs--pagination{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -19px;
+}
+
 .espaco-topo{
 	margin-top: 15px;
 }

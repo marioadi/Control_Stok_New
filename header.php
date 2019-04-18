@@ -2,7 +2,12 @@
 include 'usuario.class.php'; 
 
 $usuario = new Usuario();
-$nome = $usuario->loginAuth($_SESSION['login']);
+$usuario->loginAuth($_SESSION['login']);
+
+if(isset($_GET['logout'])){
+    $usuario->logout();
+}
+
 ?>
 <!doctype html>
 <html class="no-js">
@@ -99,13 +104,13 @@ $nome = $usuario->loginAuth($_SESSION['login']);
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                         </a>
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <h6><?php echo $nome; ?></h6>
+                            <h6><?php echo $usuario->getNomeUsuarioLogado(); ?></h6>
                         </a>
                         <div class="user-menu dropdown-menu">
                                 <a class="nav-link" href="#"><i class="fa fa- user"></i>Meu Perfil</a>
                                 <a class="nav-link" href="#"><i class="fa fa- user"></i>Notificações <span class="count">5</span></a>
                                 <a class="nav-link" href="#"><i class="fa fa -cog"></i>Configurações</a>
-                                <a class="nav-link" href="sair.php"><i class="fa fa-power -off"></i>Sair</a>
+                                <a class="nav-link" href="?logout"><i class="fa fa-power -off"></i>Sair</a>
                         </div>
                     </div>
                 </div>

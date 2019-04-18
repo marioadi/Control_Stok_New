@@ -142,7 +142,7 @@
                                 </table>
                             </div>
                             
-                            <div class="centralizar-divs alocar">
+                            <div class="centralizar-divs--pagination alocar">
                                 <?php
 
                                     if($dadosPagination['numPag'] > 1){

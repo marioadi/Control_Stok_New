@@ -36,6 +36,12 @@ class Produto {
         }
 	}
 
+	public function cadastrar($imagem, $nome, $descricao, $preco, $quantidade, $data){
+		$sqlCadastro = $this->pdo->prepare("INSERT INTO produtos SET imagem = ?, nome = ?, descricao = ?, preco = ?, quantidade = ?, data = ?");
+		$sqlCadastro->execute(array($imagem, $nome, $descricao, $preco, $quantidade, $data));
+		header("Location: index.php");
+	}
+
 	public function deleteProduct($produto){
 		if (isset($produto)) {
             $id = $produto;
@@ -44,6 +50,7 @@ class Produto {
                 
             $sql = "select * from produtos ORDER BY `id` ASC";
             $sql = $this->pdo->query($sql);
+
         }
 	}
 

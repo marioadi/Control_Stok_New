@@ -1,36 +1,12 @@
 <?php
 require 'conexao.php';
 session_start();
+include 'usuario.class.php';
 
-
-
-    if (isset($_POST['usuario']) && !empty($_POST['usuario'])) {
-        $usuario = addslashes($_POST['usuario']);
-        $senha = md5(addslashes($_POST['senha']));
-
-        $sql = "SELECT * FROM login WHERE usuario = '".$usuario."'";
-        $sql = $pdo->query($sql);
-        
-        if ($sql->rowCount() > 0) {
-            $ln = $sql->fetch();
-            $usuario_bd = $ln['usuario'];
-            $senha_bd = $ln['senha'];
-            
-            if(isset($usuario) AND isset($senha)){
-                if ($usuario == $usuario_bd && $senha == $senha_bd) {
-                    $id = $ln['id'];
-                    $_SESSION['login'] = $id;
-                    header("Location: index.php");
-                    exit;            
-                }else{
-                    echo "Usuário ou Senha incorreta!";
-                }
-            }
-            
-        }else{
-            echo "Usuário não cadastrado!";
-        }
-    }
+$usuario = new Usuario(); 
+if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
+    $usuario->logar($_POST['usuario'], $_POST['senha']);    
+}
 
 
 ?>
