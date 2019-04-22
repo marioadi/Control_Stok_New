@@ -109,7 +109,12 @@
                             <td align="center">R$ <?php if(isset($total)) echo $total; ?></td>
                         </tr>
                     </table>
-                    <a href="index.php" class="btn btn-primary"> Voltar </a>
+                     <div class="col-xs-12 col-sm-12">
+                        <a href="index.php" class="btn botao-cinza">
+                            <i class="fa fa-angle-double-left"></i>
+                            <span>Voltar</span>
+                        </a>
+                    </div>
 <!-- FIM CONTEUDO -->
                 </div>
             </div>

@@ -87,10 +87,15 @@ if(isset($_POST['nome-cad']) && !empty($_POST['nome-cad']) || isset($_POST['valo
                                         <div class="centralizar-divs">
                                             <div class="row espaco-topo">
                                                 <div  class="form-group  centralizar-divs">
-                                                    <div class="col-xs-12 col-sm-12">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <a href="index.php" class="btn botao-cinza">
+                                                            <i class="fa fa-angle-double-left"></i>
+                                                            <span>Voltar</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
                                                         <input type="submit" value="Cadastrar" class="btn btn-primary">
-                                                    </div>    
-                                                    
+                                                    </div>
                                                 </div>
                                             </div>    
                                         </div>

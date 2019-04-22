@@ -105,15 +105,21 @@
 				                    		</div>
 				                    	</div>
 
-				                    	<div class="row">
-				                    		<div class="centralizar-divs espaco-topo">
-				                    			<a href="index.php" class="btn btn-primary">
-				                    				<span class="fa fa-angle-double-left"></span> 
-				                    				Voltar 
-				                    			</a>
-				                    			<input type="submit" value="Atualizar" class="btn btn-primary">
-				                    		</div>
-				                    	</div>
+				                    	<div class="centralizar-divs">
+                                            <div class="row espaco-topo">
+                                                <div  class="form-group  centralizar-divs">
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <a href="index.php" class="btn botao-cinza">
+                                                            <i class="fa fa-angle-double-left"></i>
+                                                            <span>Voltar</span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-6">
+                                                        <input type="submit" value="Atualizar" class="btn btn-primary">
+                                                    </div>
+                                                </div>
+                                            </div>    
+                                        </div>
 	                    			</div>
 	                    		</div>
 	                    	</div>

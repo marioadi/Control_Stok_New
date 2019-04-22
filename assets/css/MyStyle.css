@@ -24,3 +24,9 @@
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+
+.botao-cinza{
+    color: #fff;
+    background-color: #787878;
+    border-color: #787878;
+}

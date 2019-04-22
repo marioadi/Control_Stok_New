@@ -19,7 +19,7 @@ if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Sufee Admin - HTML5 Admin Template</title>
+        <title>Control Stok</title>
         <meta name="description" content="Sufee Admin - HTML5 Admin Template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -46,7 +46,7 @@ if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
                 <div class="login-content">
                     <div class="login-logo">
                         <a href="painel.php">
-                            <img class="align-content" src="images/logo.png" alt="">
+                            <p class="text-info text-uppercase"> control stok</p>
                         </a>
                     </div>
                     <div class="login-form">
@@ -62,6 +62,7 @@ if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
                             <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
                         </form>
                     </div>
+                    <p class="text-center" style="margin-top: 10px; color: #FFF;"> Control Stok - 1.0 </p>
                 </div>
             </div>
         </div>
