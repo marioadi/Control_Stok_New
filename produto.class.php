@@ -50,7 +50,6 @@ class Produto {
                 
             $sql = "select * from produtos ORDER BY `id` ASC";
             $sql = $this->pdo->query($sql);
-
         }
 	}
 

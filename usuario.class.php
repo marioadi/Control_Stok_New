@@ -21,12 +21,12 @@ class Usuario{
 		- Se a senha corresponder usuario vai para o painel e guardamos ao ID para buscar as informações do usuário logado!
 	*/
 	public function logar($usuarioParam, $senhaParam){
-		if (isset($usuarioParam) && !empty($usuarioParam)) {
-        $usuario = addslashes($usuarioParam);
-        $senha = md5(addslashes($senhaParam));
+		if ((isset($usuarioParam) && !empty($usuarioParam))) {
+        	$usuario = addslashes($usuarioParam);
+        	$senha = md5(addslashes($senhaParam));
 
-        $sql = "SELECT * FROM login WHERE usuario = '".$usuario."'";
-        $sql = $this->pdo->query($sql);
+        	$sql = "SELECT * FROM login WHERE usuario = '".$usuario."'";
+        	$sql = $this->pdo->query($sql);
         
 	        if ($sql->rowCount() > 0) {
 	            $ln = $sql->fetch();
@@ -40,13 +40,15 @@ class Usuario{
 	                    header("Location: index.php");
 	                    exit;            
 	                }else{
-	                    echo "Usuário ou Senha incorreta!";
+	                    return "Usuário ou Senha incorreta!";
 	                }
 	            }
 	            
 	        }else{
-	            echo "Usuário não cadastrado!";
+	            return "Usuário ou Senha incorreta!";
 	        }
+    	}else{
+    		return "Campo não pode ser vazio!";
     	}
 	}
 	/**

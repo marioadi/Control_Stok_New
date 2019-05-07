@@ -78,7 +78,9 @@
 
                                     // Excluir Produto..
                                     if (isset($_POST['id_ex'])) {
-                                        $produto->deleteProduct($_POST['id_ex']);    
+                                        $produto->deleteProduct($_POST['id_ex']);
+                                        $sql = $produto->listarTodos();
+
                                     }
 
                                     // Buscar todos

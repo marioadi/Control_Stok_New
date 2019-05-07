@@ -4,11 +4,9 @@ session_start();
 include 'usuario.class.php';
 
 $usuario = new Usuario(); 
-if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
-    $usuario->logar($_POST['usuario'], $_POST['senha']);    
-}
-
-
+    if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
+        $error = $usuario->logar($_POST['usuario'], $_POST['senha']);
+    }
 ?>
 
 <!doctype html>
@@ -32,12 +30,9 @@ if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
         <link rel="stylesheet" href="assets/css/themify-icons.css">
         <link rel="stylesheet" href="assets/css/flag-icon.min.css">
         <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
-        <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
         <link rel="stylesheet" href="assets/scss/style.css">
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
-
-        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
 
     </head>
     <body class="bg-dark">
@@ -45,29 +40,34 @@ if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
             <div class="container">
                 <div class="login-content">
                     <div class="login-logo">
-                        <a href="painel.php">
-                            <p class="text-info text-uppercase"> control stok</p>
-                        </a>
+                        <img src="images/logo_cs_3-1.png" width="150" height="140" />
                     </div>
+                    <?php 
+                        if (isset($error) && !empty($error)) {
+                           echo '<div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Error!</strong> '.$error.' </div>';
+                        }
+                    ?>
                     <div class="login-form">
-                        <form method="POST">
+                        <form id="form" method="POST">
                             <div class="form-group">
                                 <label>Usuário</label>
-                                <input type="text" name="usuario" class="form-control" placeholder="nome usário">
+                                <input id="name" type="text" name="usuario" class="form-control" placeholder="nome usário" required="true">
                             </div>
                             <div class="form-group">
                                 <label>Senha</label>
-                                <input type="Password" name="senha" class="form-control" placeholder="senha">
+                                <input id="password" type="Password" name="senha" class="form-control" placeholder="senha" required="true">
                             </div>
                             <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">Sign in</button>
                         </form>
                     </div>
-                    <p class="text-center" style="margin-top: 10px; color: #FFF;"> Control Stok - 1.0 </p>
+                    <p class="text-center" style="margin-top: 10px; font-size: 12px; font-family: monospace; color: #FFF;"> Control Stok - 1.0 </p>
                 </div>
             </div>
         </div>
-
-
         <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/plugins.js"></script>
