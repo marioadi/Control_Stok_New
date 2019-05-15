@@ -11,8 +11,9 @@
 	//Vindo do proprio formulário
 	if (isset($_POST['id-edit']) && !empty($_POST['id-edit'])) {
 		$produto->updateProduct($_POST['id-edit'], 
-			$_POST['nome-edit'], $_POST['descricao-edit'], $_POST['preco-edit'], 
-			$_POST['quantidade-edit'], $_POST['data-edit'], $_FILES['imagem-edit']);
+		$_POST['nome-edit'], $_POST['descricao-edit'], $_POST['preco-edit'], 
+		$_POST['quantidade-edit'], $_POST['data-edit'], $_FILES['imagem-edit']);
+		$ln = $produto->editProduct($_POST['id-edit']);
 	}
 
 	include 'header.php';

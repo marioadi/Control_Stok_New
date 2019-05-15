@@ -65,7 +65,8 @@ if(isset($_GET['logout'])){
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i></i>USUÁRIO</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i></i><a href="#">Cadastrar</a></li>
+                            <li><i></i><a href="listar_usuarios.php">Listar</a></li>
+                            <li><i></i><a href="cadastro_usuario.php">Cadastrar</a></li>
                         </ul>
                     </li>
 

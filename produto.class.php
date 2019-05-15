@@ -28,9 +28,9 @@ class Produto {
 		}
 	}
 	
-	public function campoDeBusca(){
-		if (isset($_POST['buscar'])) {
-        	$sql = "select * from produtos where nome like '%". $_POST['buscar'] ."%' OR descricao like '%". $_POST['buscar'] ."%' ";
+	public function campoDeBusca($dados){
+		if (isset($dados)) {
+        	$sql = "select * from produtos where nome like '%". $dados ."%' OR descricao like '%". $dados ."%' ";
         	$sql = $pdo->query($sql);
         	return $sql;
         }
@@ -39,7 +39,6 @@ class Produto {
 	public function cadastrar($imagem, $nome, $descricao, $preco, $quantidade, $data){
 		$sqlCadastro = $this->pdo->prepare("INSERT INTO produtos SET imagem = ?, nome = ?, descricao = ?, preco = ?, quantidade = ?, data = ?");
 		$sqlCadastro->execute(array($imagem, $nome, $descricao, $preco, $quantidade, $data));
-		header("Location: index.php");
 	}
 
 	public function deleteProduct($produto){
