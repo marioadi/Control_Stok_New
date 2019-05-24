@@ -75,10 +75,12 @@ class Usuario{
 		        $ln = $sql->fetch();
 		        $this->id = $ln['id'];
 		        $this->nomeUsuarioLogado = $ln['usuario'];
+
 		    }
+
 		}else{
 		    header("Location: login.php");
-		    exit;
+			exit;
 		}
 	}
     

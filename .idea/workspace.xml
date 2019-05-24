@@ -27,11 +27,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/page-login.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/assets/scss/style.css" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="$PROJECT_DIR$/painel.php" />
         <option value="$PROJECT_DIR$/carrinho.php" />
+        <option value="$PROJECT_DIR$/log.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/usuario.class.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/login.php" />
       </list>
     </option>
@@ -76,8 +79,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -92,7 +95,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Control_Stok" />
+              <option name="myItemId" value="Control_Stok_New" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -149,7 +152,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1295754" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -202,51 +205,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/carrinho.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2">
-          <caret line="142" column="35" selection-start-line="142" selection-start-column="35" selection-end-line="142" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conexao.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25714287">
           <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/excluir-p.php">
+    <entry file="file://$PROJECT_DIR$/usuario.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028571429">
-          <caret line="1" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.49275362">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
           <folding>
-            <marker date="1526664862064" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..login..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT id, u..login..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="UPDATE usuar..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1558731397735" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..usuarios..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2857143">
-          <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.1095008">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
-            <marker date="1527469133320" expanded="true" signature="-1:-1" placeholder="select * fro..produtos..." />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1558737601001" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1558737601001" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1558737601001" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1558737601001" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31428573">
-          <caret line="104" column="40" selection-start-line="104" selection-start-column="40" selection-end-line="104" selection-end-column="40" />
+        <state vertical-scroll-proportion="2.2721417">
+          <caret line="83" column="71" selection-start-line="83" selection-start-column="71" selection-end-line="83" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.273752">
+          <caret line="10" column="98" selection-start-line="10" selection-start-column="98" selection-end-line="10" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60225445">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1526590817019" expanded="true" signature="-1:-1" placeholder="select * fro..usuarios..." />
-            <marker date="1526590817019" expanded="true" signature="-1:-1" placeholder="select * fro..produtos..." />
-            <marker date="1526590817019" expanded="true" signature="-1:-1" placeholder="select * fro..produtos..." />
-            <marker date="1526590817019" expanded="true" signature="-1:-1" placeholder="select * fro..produtos..." />
+            <marker date="1558730930474" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1558730930474" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

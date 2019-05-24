@@ -1,10 +1,14 @@
 <?php session_start();
-include 'usuario.class.php'; 
+include 'usuario.class.php';
+include 'log.class.php';
 
 $usuario = new Usuario();
+$log = new Log();
+
 $usuario->loginAuth($_SESSION['login']);
 
 if(isset($_GET['logout'])){
+    $log->getLog("Usuário ".strtoupper($usuario->getNomeUsuarioLogado())." deslogou do sistema!");
     $usuario->logout();
 }
 

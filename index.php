@@ -2,6 +2,7 @@
       include 'produto.class.php';
 
       $produto = new Produto();
+      $log->getLog("Usuário ".strtoupper($usuario->getNomeUsuarioLogado())." logado no sistema!");
 ?> 
 
 <!-- Inicio do conteudo -->
@@ -80,7 +81,7 @@
                                     if (isset($_POST['id_ex'])) {
                                         $produto->deleteProduct($_POST['id_ex']);
                                         $sql = $produto->listarTodos();
-
+                                        $log->getLog("Produto excluido");
                                     }
 
                                     // Buscar todos

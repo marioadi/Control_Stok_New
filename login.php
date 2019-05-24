@@ -2,11 +2,15 @@
 require 'conexao.php';
 session_start();
 include 'usuario.class.php';
+include 'log.class.php';
 
-$usuario = new Usuario(); 
+$log = new Log();
+$usuario = new Usuario();
+
     if (isset($_POST['usuario']) && !empty($_POST['senha'])) {
         $error = $usuario->logar($_POST['usuario'], $_POST['senha']);
     }
+
 ?>
 
 <!doctype html>
