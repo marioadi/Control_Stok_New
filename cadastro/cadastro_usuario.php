@@ -100,9 +100,6 @@ $usuario = new Usuario;
             </div>
         </div>
 
-       
-        
-
         <!-- THE END CODE -->
 
     </div><!-- /#right-panel -->

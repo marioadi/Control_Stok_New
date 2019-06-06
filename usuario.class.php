@@ -38,7 +38,7 @@ class Usuario{
 	                if ($usuario == $usuario_bd && $senha == $senha_bd) {
 	                    $id = $ln['id'];
 	                    $_SESSION['login'] = $id;
-	                    header("Location: index.php");
+	                    header("Location: dashboard.php");
 	                    exit;            
 	                }else{
 	                    return "Usuário ou Senha incorreta!";

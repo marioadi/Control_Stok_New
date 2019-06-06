@@ -49,20 +49,21 @@ if(isset($_GET['logout'])){
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.php"><p class="text-info text-uppercase">Control Stok</p></a>
+                <a class="navbar-brand" href="dashboard.php"><p class="text-info text-uppercase">Control Stok</p></a>
                 <a class="navbar-brand hidden" href="./"><p class="text-info text-uppercase">CS</p></a>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="index.php"> <i></i> PAINEL DE CONTROLE </a>
+                        <a href="dashboard.php"> <i></i> PAINEL DE CONTROLE </a>
                     </li>
 
                     <h3 class="menu-title">PROCEDIMENTOS</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i></i>PRODUTOS</a>
                         <ul class="sub-menu children dropdown-menu">
+                            <li><i></i><a href="index.php">Listar</a></li>
                             <li><i></i><a href="cadastro_produto.php">Cadastrar</a></li>
                         </ul>
                     </li>
